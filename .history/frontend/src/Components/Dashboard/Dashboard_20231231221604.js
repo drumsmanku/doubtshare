@@ -43,10 +43,7 @@ function Dashboard() {
       <div style={{display:'flex', flexDirection:'column', width:'100%'}}>
         <div className={styles.navbar}>
           <div className={styles.navBarContent}>
-            <div style={{display:'flex', alignItems:'center', fontSize:'small'}}>
-              
-              
-            </div>
+            
 
 
             <div>

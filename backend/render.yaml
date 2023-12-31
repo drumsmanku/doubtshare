@@ -1,0 +1,21 @@
+services:
+- type: web
+  name: your-app-name
+  env: node
+  plan: starter
+  buildCommand: npm install
+  startCommand: npm start
+  envVars:
+    - key: DATABASE_HOST
+      value: dpg-cm8mku21hbls73ad4sqg-a
+    - key: DATABASE_USER
+      value: root
+    - key: DATABASE_PASSWORD
+      value: zgwwTb2jL9uCdlJV2xVmWrYj29zS6FCe
+    - key: DATABASE_NAME
+      value: doubtshare_postgres
+    - key: DATABASE_PORT
+      value: '5432'
+    - key: JWT_SECRET_KEY
+      # Replace the value with your actual secret key for JWT
+      value: abbbscbhahbhc

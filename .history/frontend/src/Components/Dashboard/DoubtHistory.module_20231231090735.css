@@ -1,0 +1,47 @@
+.headphoneType{
+  border:none;
+  outline:none;
+  font-family:'Roboto';
+  font-size:small;
+  font-weight: 500;
+  background-color: #D9D9D9;
+  color: black;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.company{
+  border:none;
+  outline:none;
+  font-family:'Roboto';
+  font-size:small;
+  font-weight: 500;
+  background-color: #D9D9D9;
+  color: black;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.color{
+  border:none;
+  outline:none;
+  font-family:'Roboto';
+  font-size:small;
+  font-weight: 500;
+  background-color: #D9D9D9;
+  color: black;
+  border-radius: 2rem;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.price{
+  border:none;
+  outline:none;
+  font-family:'Roboto';
+  font-size:small;
+  font-weight: 500;
+  background-color: #D9D9D9;
+  color: black;
+  border-radius: 2rem;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}

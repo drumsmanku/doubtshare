@@ -18,7 +18,7 @@ router.post('/register/student', async (req, res) => {
     };
 
     client.query(newUserQuery).then(()=>{
-      const token = jwt.sign({ email:email }, 'abbbscbhahbhc', {expiresIn: 3600 });
+      const token = jwt.sign({ email:email }, process.env.JWT_SECRET_KEY, {expiresIn: 3600 });
      res.json({ message: 'User registered successfully!' , token, name:name});
     })
     
@@ -45,7 +45,7 @@ router.post('/login/student', async (req, res) => {
       const match = await bcrypt.compare(password, user.password);
 
       if (match) {
-        const token = jwt.sign({ userId: user.id, email: user.email }, 'abbbscbhahbhc', { expiresIn: 3600 });
+        const token = jwt.sign({ userId: user.id, email: user.email }, process.env.JWT_SECRET_KEY, { expiresIn: 3600 });
         
         res.status(200).json({ message: 'Logged in successfully!', token, name:user.name });
       } else {
@@ -71,7 +71,7 @@ router.post('/register/tutor', async (req, res) => {
     };
 
     client.query(newUserQuery).then(()=>{
-      const token = jwt.sign({ email:email }, 'abbbscbhahbhc', {expiresIn: 3600 });
+      const token = jwt.sign({ email:email }, process.env.JWT_SECRET_KEY, {expiresIn: 3600 });
      res.json({ message: 'User registered successfully!' , token, name:name});
     })
     
@@ -99,7 +99,7 @@ router.post('/login/tutor', async (req, res) => {
 
       if (match) {
 
-        const token = jwt.sign({ userId: user.id, email: user.email }, 'abbbscbhahbhc', { expiresIn: 3600 });
+        const token = jwt.sign({ userId: user.id, email: user.email }, process.env.JWT_SECRET_KEY, { expiresIn: 3600 });
         
         res.status(200).json({ message: 'Logged in successfully!', token, name:user.name });
       } else {
